@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display:wght@400..900&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Mod Studio</title>
 </head>
@@ -10,7 +13,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1 class="mod">Mod</h1>
-        <nav>
+        <nav id="nav-frame">
             <!-- Навигация по странице -->
             <ul> 
                 <li><a href="#biography">Biography</a></li>
@@ -22,21 +25,21 @@
     </header>
     <main>
         <!-- Основное содержимое страницы -->
-        <article class="hero-container">
+        <section class="hero-container">
             <img src="img/hero.jpeg" alt="Hero section">
             <div class="hero-frame">
-                <div class="mod-studio"><h2>Mod Studio</h2></div>
+                <div class="mod-studio"><p>Mod Studio</p></div>
                 <div class="modern-web-studio"><p>Modern Web Studio</p></div>
             </div>
             <hr>
-        </article>
+        </section>
         <!-- Биография и цитаты -->
-        <article id="biography">
+        <section class="section-name" id="biography">
             <h2>Biography</h2>
             <img class="biography-photo" src="img/jared-weiss.jpg" alt="Katya Mills photo">
-            <h3>Katya Mills</h3>
-            <p>Art Director</p>
-            <p>Scenography / Styling / Creative Photography / Design</p>
+            <h3 id="designer-name">Katya Mills</h3>
+            <p id="skills">Art Director<br>
+            Scenography / Styling / Creative Photography / Design</p>
             <blockquote>
                 "The more I deal with the work <br>
                 as something that is my own, <br>
@@ -44,39 +47,39 @@
                 the more successful it is."
             </blockquote>
             <hr>
-        </article>
+        </section>
         <!-- Дизайнеры -->
-        <article id="designers">
+        <section class="section-name" id="designers">
             <h2>Designers</h2>
             <div class="designers-list">
                 <div class="designer-item">
                     <img src="img/jess-wonder.jpeg" alt="JESS WONDER">
-                    <h3>JESS WONDER</h3>
-                    <p><b>From/</b> Be more flower</p>
-                    <p><b>Skills/</b> Design Strategy / Marketing</p>
+                    <p class="designer-description"><span>JESS WONDER</span><br>
+                    <span>From/</span> Be more flower<br>
+                    <span>Skills/</span> Design Strategy / Marketing</p>
                 </div>
                 <div class="designer-item">
                     <img src="img/Kameron-Clein.jpeg" alt="KAMERON CLEIN">
-                    <h3>KAMERON CLEIN</h3>
-                    <p><b>From/</b> Be more flower</p>
-                    <p><b>Skills/</b> Design Strategy / Marketing</p>
+                    <p class="designer-description"><span>KAMERON CLEIN</span><br>
+                    <span>From/</span> Be more flower<br>
+                    <span>Skills/</span> Design Strategy / Marketing</p>
                 </div>
                 <div class="designer-item">
                     <img src="img/louisse-red.jpeg" alt="LOUISSE RED">
-                    <h3>LOUISSE RED</h3>
-                    <p><b>From/</b> Be more flower</p>
-                    <p><b>Skills/</b> Design Strategy / Marketing</p>
+                    <p class="designer-description"><span>LOUISSE RED</span><br>
+                    <span>From/</span> Be more flower<br>
+                    <span>Skills/</span> Design Strategy / Marketing</p>
                 </div>
                 <div class="designer-item">
                     <img src="img/kameron-clein.jpeg" alt="KAMERON CLEIN">
-                    <h3>KAMERON CLEIN</h3>
-                    <p><b>From/</b> Be more flower</p>
-                    <p><b>Skills/</b> Design Strategy / Marketing</p>
+                    <p class="designer-description"><span>KAMERON CLEIN</span><br>
+                    <span>From/</span> Be more flower<br>
+                    <span>Skills/</span> Design Strategy / Marketing</p>
                 </div>
             </div>
-        </article>
+        </section>
         <!-- Секция с рекомендациями -->
-        <article id="testimonials">
+        <section class="section-name" id="testimonials">
             <h2>Testimonials</h2>
             <div class="testimonials-frame">
                 <div class="frame29">
@@ -101,9 +104,9 @@
                     <img src="img/testimonials.jpeg" alt="Testimonials">
                 </div>
             </div>
-        </article>
+        </section>
         <!-- Секция про сильные стороны -->
-        <article id="strong-points">
+        <section class="section-name" id="strong-points">
             <h2>Strong points</h2>
             <img src="img/dawid-liberadzki.jpeg" alt="Dawid Liberadzki">
             <img src="img/avery-klein.jpeg" alt="Avery Klein">
@@ -121,18 +124,18 @@
                 <li>Nature</li>
             </ul>
             <img src="img/keghan-crossland.jpeg" alt="Keghan Crossland">
-        </article>
+        </section>
     </main>
     <!-- В подвале размещены контакты -->
     <footer >
         
         <div class="div-footer" style="height:168px; background-color: black;">
-            <address>
+            <contacts>
                 <a href="tel:+79211234567" style="color: white;">+7 921 123-45-67</a><br>
                 <a href="mailto:INFO@MODSTUDIO.COM" style="color:white">INFO@MODSTUDIO.COM</a>
-            </address>
-            <p class="logo" style="color:white">A product of <b>MOD</b></p>
-            <p class="copyright" style="color:white">© 2023 Mod Media. All rights reserved</p>
+            </contacts>
+            <p class="logo" style="color:white">A product of <span>MOD</span></p>
+            <p class="pricing" style="color:white">© 2023 Mod Media. All rights reserved</p>
         </div>
     </footer>
 </body>

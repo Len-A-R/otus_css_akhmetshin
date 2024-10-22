@@ -1,0 +1,72 @@
+.mod {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 86px;
+}
+
+#nav-frame{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;    
+}
+
+.mod-studio {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 86px;    
+}
+
+.modern-web-studio {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;    
+    font-size: 20px;
+}
+
+.section-name {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;    
+    font-size: 24px;    
+}
+
+#designer-name {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 86px;      
+}
+
+#skills {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+#biography blockquote {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+.designer-description{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+.designer-description span{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+}
