@@ -238,16 +238,9 @@ section {
     margin-top: 145px;
     margin-left: 20px;
     width: 100%;
-    overflow-x: auto;
-    scrollbar-width: none;
-}
-.section-designers .title {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
 }
 .section-designers .title .section-name{
-    grid-column: 2 / 13;
+    margin-left: calc(100% / 12);
 }
 
 
@@ -257,6 +250,8 @@ section {
     align-items: end; 
     margin-top: 30px;
     max-height: 30vw;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .designers-list .first-item {
