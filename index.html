@@ -12,77 +12,80 @@
 <body>
     <header>
         <!-- Заголовок сайта -->
-        <h1 class="header-logo">Mod</h1>
-        <nav class="navigation">
+        <div class="logo">Mod</div>
+        <nav>
             <!-- Навигация по странице -->
-            <ul> 
-                <li><a href="#biography">Biography</a></li>
-                <li><a href="#designers">Designers</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#strong-points">Strong points</a></li>
-            </ul>
+                <a href="#biography">Biography</a>
+                <a href="#designers">Designers</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#strong-points">Strong points</a>
         </nav>
     </header>
+    <!-- Основное содержимое страницы -->
     <main>
-        <!-- Основное содержимое страницы -->
-        <section>
-            <img src="img/hero.jpeg" alt="Hero section">
-            <div class="hero-img">
-                <div class="content-hero big-title"><p>Mod Studio</p></div>
-                <div class="content-hero-subtitle"><p>Modern Web Studio</p></div>
-            </div>
-            <hr>
-        </section>
-        <!-- Биография и цитаты -->
-        <section>
-            <h2 class="section-name">Biography</h2>
-            <img class="content-biography-img" src="img/jared-weiss.jpg" alt="Katya Mills photo">
-            <h3 class="big-title">Katya Mills</h3>
-            <p class="content-biography-skills">Art Director<br>
-            Scenography / Styling / Creative Photography / Design</p>
-            <blockquote class="special-font">
-                "The more I deal with the work <br>
-                as something that is my own, <br>
-                as something that is personal, <br>
-                the more successful it is."
-            </blockquote>
-            <hr>
-        </section>
-        <!-- Дизайнеры -->
-        <section class="section-designers">
-            <h2 class="section-name">Designers</h2>
-            <div class="designers-list">
-                <div class="designers-section designer-item">
-                    <img src="img/jess-wonder.jpeg" alt="JESS WONDER">
-                    <p class="designer-desc"><span>JESS WONDER</span><br>
-                    <span>From/</span> Be more flower<br>
-                    <span>Skills/</span> Design Strategy / Marketing</p>
-                </div>
-                <div class="designer-item">
-                    <img src="img/Kameron-Clein.jpeg" alt="KAMERON CLEIN">
-                    <p class="designer-desc"><span>KAMERON CLEIN</span><br>
-                    <span>From/</span> Be more flower<br>
-                    <span>Skills/</span> Design Strategy / Marketing</p>
-                </div>
-                <div class="designer-item">
-                    <img src="img/louisse-red.jpeg" alt="LOUISSE RED">
-                    <p class="designer-desc"><span>LOUISSE RED</span><br>
-                    <span>From/</span> Be more flower<br>
-                    <span>Skills/</span> Design Strategy / Marketing</p>
-                </div>
-                <div class="designer-item">
-                    <img src="img/kameron-clein.jpeg" alt="KAMERON CLEIN">
-                    <p class="designer-desc"><span>KAMERON CLEIN</span><br>
-                    <span>From/</span> Be more flower<br>
-                    <span>Skills/</span> Design Strategy / Marketing</p>
-                </div>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Mod Studio</h1>
+                <p>Modern Web Studio</p>
             </div>
         </section>
-        <!-- Секция с рекомендациями -->
-        <section>
-            <h2 class="section-name">Testimonials</h2>
-            <div class="testimonials-frame">
-                <div>
+        <div class="container">
+            <!-- Биография и цитаты -->
+            <section class="biography-section" id="biography">
+                <div class="biography-image-container">
+                    <img class="content-biography-img" src="img/jared-weiss.jpg" alt="Katya Mills photo">
+                </div>
+                <div class="vertical-title"><h2 class="section-name">Biography</h2></div>
+                <div class="biography-info">
+                    <div class="biography-text">
+                        <h3>Katya<br>Mills</h3>
+                        <p class="content-biography-skills">Art Director<br>
+                        Scenography / Styling / Creative Photography / Design</p>
+                        <div class="line"></div>
+                        <blockquote class="special-font">
+                            "The more I deal with the work <br>
+                            as something that is my own, <br>
+                            as something that is personal, <br>
+                            the more successful it is."
+                        </blockquote>
+                    </div> 
+                </div>
+            </section>
+            <!-- Дизайнеры -->
+            <section class="section-designers" id="designers">
+                <div class="title">
+                    <h2 class="section-name">Designers</h2>                    
+                </div>
+                <div class="designers-list">
+                    <div class="designer-item first-item">
+                        <img src="img/jess-wonder.jpeg" alt="JESS WONDER">
+                        <p class="designer-desc"><span>JESS WONDER</span><br>
+                        <span>From/</span> Be more flower<br>
+                        <span>Skills/</span> Design Strategy / Marketing</p>
+                    </div>
+                    <div class="designer-item other-item">
+                        <img src="img/Kameron-Clein.jpeg" alt="KAMERON CLEIN">
+                        <p class="designer-desc"><span>KAMERON CLEIN</span><br>
+                        <span>From/</span> Be more flower<br>
+                        <span>Skills/</span> Design Strategy / Marketing</p>
+                    </div>
+                    <div class="designer-item other-item">
+                        <img src="img/louisse-red.jpeg" alt="LOUISSE RED">
+                        <p class="designer-desc"><span>LOUISSE RED</span><br>
+                        <span>From/</span> Be more flower<br>
+                        <span>Skills/</span> Design Strategy / Marketing</p>
+                    </div>
+                    <div class="designer-item other-item">
+                        <img src="img/kameron-clein.jpeg" alt="KAMERON CLEIN">
+                        <p class="designer-desc"><span>KAMERON CLEIN</span><br>
+                        <span>From/</span> Be more flower<br>
+                        <span>Skills/</span> Design Strategy / Marketing</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция с рекомендациями -->
+            <section class="section-testimonials" id="testimonials">
+                <div class="testimonials-frame">
                     <div class="testimonials-links-list">
                         <div>
                             <p>Creativity</p>
@@ -97,45 +100,51 @@
                             <a class="testimonials-links-item" href="www.whitepapers.com">www.whitepapers.com</a>
                         </div>
                     </div>
-                    <img src="img/keghan-crossland.jpeg" alt="Testimonials">
-                </div>
+                </div>   
+                <div class="testimonials-image-container">
+                    <img class="testimonials-image" src="img/keghan-crossland.jpeg" alt="Testimonials">                    
+                </div>                    
+                <h2 class="section-name">Testimonials</h2>
+                
                 <div class="section-testimonials-quote">
                     <blockquote class="special-font">I just really want to do good work and work with some great people, people who challenge me.</blockquote>
                     <img src="img/testimonials.jpeg" alt="Testimonials">
+                </div>                    
+            </section>                
+            <!-- Секция про сильные стороны -->
+            <section class="section-strong-points" id="strong-points">
+                <h2 class="section-name">Strong points</h2>
+                <img src="img/dawid-liberadzki.jpeg" alt="Dawid Liberadzki">
+                <img src="img/avery-klein.jpeg" alt="Avery Klein">
+                <div class="text">
+                    <h3 class="big-title">Strengths</h3>
+                    <ul class="special-font">
+                        <li>Interiors</li>
+                        <li>Outdoors</li>
+                        <li>Portraits</li>
+                        <li>Styling</li>
+                        <li>Events</li>
+                        <li>Architecture</li>
+                        <li>Design</li>
+                        <li>Celebrations</li>
+                        <li>Fashion</li>
+                        <li>Nature</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <!-- Секция про сильные стороны -->
-        <section>
-            <h2 class="section-name">Strong points</h2>
-            <img src="img/dawid-liberadzki.jpeg" alt="Dawid Liberadzki">
-            <img src="img/avery-klein.jpeg" alt="Avery Klein">
-            <h3 class="big-title">Strengths</h3>
-            <ul class="special-font strong-points-list">
-                <li>Interiors</li>
-                <li>Outdoors</li>
-                <li>Portraits</li>
-                <li>Styling</li>
-                <li>Events</li>
-                <li>Architecture</li>
-                <li>Design</li>
-                <li>Celebrations</li>
-                <li>Fashion</li>
-                <li>Nature</li>
-            </ul>
-            <img src="img/keghan-crossland.jpeg" alt="Keghan Crossland">
-        </section>
+                <img src="img/keghan-crossland.jpeg" alt="Keghan Crossland"> 
+            </section>                       
+        </div>
     </main>
     <!-- В подвале размещены контакты -->
     <footer>
         <div class="footer-contacts">
-            <contacts>
+            <div class="contacts">
                 <a class="phone" href="tel:+79211234567">+7 921 123-45-67</a><br>
                 <a class="email" href="mailto:INFO@MODSTUDIO.COM">INFO@MODSTUDIO.COM</a>
-            </contacts>
+            </div>
             <p class="footer-logo">A product of <span>MOD</span></p>
             <p class="pricing">© 2023 Mod Media. All rights reserved</p>
         </div>
-    </footer>
+    </footer>                
 </body>
 </html>

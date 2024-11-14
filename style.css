@@ -1,12 +1,14 @@
-body {
-    font-family: "Roboto", serif;    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.big-title {
-    font-family: "Playfair Display", serif;
-    font-size: 86px;
-    font-weight: 500;
-    font-style: normal;
+/* настройка шрифтов */
+body {
+    font-family: "Roboto", serif;
+    min-width: 350px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .special-font {
@@ -14,52 +16,52 @@ body {
     font-weight: 400;
 }
 
-.section-name {
-    font-weight: 700;
-    font-size: 24px;
-    font-style: normal;
-}
-
-.header-logo {
+.big-title {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 86px;
-}
-
-.navigation{
     font-weight: 500;
     font-style: normal;
-    font-size: 24px;    
+    font-size: 4.5vw;
+}
+
+.section-name {
+    font-weight: 700;
+    font-size: 1.3vw;
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5vw;
 }
 
 .content-hero-subtitle {
     font-weight: 500;
     font-style: normal;    
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 
 .content-biography-skills {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21.09px;
+    font-size: 1.1vw;
+    
 }
 
 blockquote {
-    font-size: 26px;    
+    font-size: 1.6vw;    
 }
 
 .designer-desc{
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.75px;
+    font-size: 1vw;
 }
 
 .designer-desc span{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 18.75px;
+    font-size: 1vw;
 }
 
 .testimonials-links-list{
@@ -76,10 +78,8 @@ blockquote {
     text-decoration: none;
 }
 
-.strong-points-list{
-    font-size: 34px;
-    font-style: normal;    
-    line-height: 40.8px;
+.section-strong-points ul{
+    font-size: 2.15vw;
 }
 
 footer{
@@ -97,10 +97,342 @@ footer{
 }
 
 .footer-logo{
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 1.2vw;
 }
 .footer-logo span{
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.5vw;
+}
+.contacts {
+    font-size: 1.2vw;
+}
+.pricing {
+    font-size: 1.2vw;
+}
+
+/* настройка блоков */
+header {
+    height: 135px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    /* padding: 20px 20px; */
+    max-width: 1440px;
+    margin: 0 auto;    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main {
+    position: relative;
+}
+
+nav a {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/hero.jpeg");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: left; 
+    background-repeat: no-repeat;
+    /* padding: 110px 20px; */
+    height: 630px;
+    width: 100%; 
+}
+
+.hero-text {
+    position: relative;
+    /* grid-column: 4 / 10; */
+    width: calc(50% - 30px);
+    height: 360px;
+    margin: auto; 
+    background-color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.hero-text h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 4.5vw;
+}
+.hero-text p{
+    font-weight: 500;
+    font-style: normal;    
+    font-size: 1.05vw;
+}
+
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-top: 0;
+    margin-bottom: 150px;
+}
+
+/* START BIOGRAPHY */
+.biography-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    margin: 0 20px;
+}
+
+.biography-image-container {
+    grid-column: 2 / 7;
+    /* width: 50%; */
+    height: 100%;
+    /* padding-left: calc(100% / 6); */
+}
+
+.content-biography-img {
+    width: 100%;
+}
+
+.vertical-title {
+    grid-column: 7;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.vertical-title .section-name {
+    margin: 3px 8px;
+    transform: rotate(-180deg);
+    text-align: right;
+}
+
+.biography-info {
+    grid-column: 8 / 12;
+}
+
+.biography-text {
+    margin-top: 39%;
+}
+
+.biography-text *{
+    margin-top: 7%;
+}
+
+.line {
+    width: 20px; /* ширина линии */
+    height: 6px; /* толщина линии */
+    background-color: black;
+    margin: 15px 0;
+  }
+
+
+.biography-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 5vw;
+    font-weight: 500;
+    font-style: normal;
+}
+/* END BIOGRAPHY */
+
+/* START DESIGNERS */
+.section-designers {
+    display: block;
+    position: static;
+    margin-top: 145px;
+    margin-left: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.section-designers .title {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+.section-designers .title .section-name{
+    grid-column: 2 / 13;
+}
+
+
+.designers-list {
+    display: flex;
+    column-gap: 20px;
+    align-items: end; 
+    margin-top: 30px;
+    max-height: 30vw;
+}
+
+.designers-list .first-item {
+    min-width: calc(100% / 12 * 5 - 30px);
+}
+
+.designers-list .other-item {
+    min-width: calc(100% / 12 * 3 - 25px) ;
+}
+
+.designer-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;    
+}
+.designer-item img {
+    flex-shrink: 1;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.designers-list .first-item .designer-desc{
+    margin-left: calc(100% / 5 * 2); 
+    min-width: calc(100% / 5 * 3);
+}
+/* END DESIGNERS */
+
+/* START TESTIMONIALS */
+.section-testimonials {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.testimonials-frame {
+    grid-column: 2;
+    display:flex;
+}
+.testimonials-image-container {
+    grid-column: 3 / 7;
+    display: flex;
+  
+}
+.testimonials-image {
+    flex: 1;
+    object-fit: cover;
+    max-width: 100%;
+}
+.testimonials-links-list {
+    display: grid;
+    flex: 1;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: end;
+}
+
+.testimonials-links-list div{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.section-testimonials .section-name {
+    grid-column: 7;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    text-align: right;
+}
+
+.section-testimonials-quote {
+    position: relative;
+    flex-direction: column;
+    grid-column: 9 / 11;
+    object-fit: cover;
+    align-content: center;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-testimonials-quote img {
+    max-width: 100%;
+}
+
+.section-testimonials-quote .special-font {
+    font-size: 2vw;
+    text-align: center;
+}
+/* END TESTIMONIALS */
+/* START STRONG POINTS */
+.section-strong-points {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 28px 1fr;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.section-strong-points .section-name {
+    grid-row: 1;
+    grid-column: 3 / 5;
+}
+
+.section-strong-points img{
+    grid-row: 2;
+    grid-column: span 3;
+    width: 100%;
+}
+
+.section-strong-points .text{
+    grid-row: 2;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-strong-points .text h3 {
+    text-align: center;
+}
+
+.section-strong-points .text ul {
+    list-style: none;
+    margin-left: calc(100% / 4);
+}
+
+.section-strong-points img{
+    grid-row: 2;
+    grid-column: span 3;
+    object-fit: cover;
+    height: 100%;
+}
+/* END STRONG POINTS */
+
+footer {
+    height: 168px;
+    align-content: center;
+}
+.footer-contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.contacts {
+    text-align: left;
+    align-content: center;
+}
+
+.footer-logo {
+    text-align: center;
+    align-content: center;
+}
+
+.pricing {
+    text-align: end;
+    align-content: center;
 }
