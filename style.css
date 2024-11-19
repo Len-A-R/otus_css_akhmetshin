@@ -2,13 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid; */
 }
-
-html {
-    font-size: 62.5%;
-}
-
 /* настройка шрифтов */
 body {
     font-family: "Roboto", serif;
@@ -27,12 +21,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 8.6rem;
+    font-size: 4.5vw;
 }
 
 .section-name {
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 1.3vw;
     font-style: normal;
 }
 
@@ -41,54 +35,56 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 8.6rem;
+    font-size: 4.5vw;
 }
 
 .content-hero-subtitle {
     font-weight: 500;
     font-style: normal;    
-    font-size: 2.4rem;
+    font-size: 1.3vw;
 }
 
 .content-biography-skills {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.1vw;
     
 }
 
 blockquote {
-    font-size: 2.6rem;    
+    font-size: 1.6vw;    
 }
 
 .designer-desc{
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1vw;
 }
 
 .designer-desc span{
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1vw;
 }
 
 .testimonials-links-list{
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.2vw;
+    /* line-height: 18.75px; */
 }
 
 .testimonials-links-item{
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.2vw;
+    /* line-height: 18.75px; */
     color: black;
     text-decoration: none;
 }
 
 .section-strong-points ul{
-    font-size: 3.4rem;
+    font-size: 2.15vw;
 }
 
 footer{
     font-weight: 400;
-    font-size: 1.6rem; 
+    font-size: 1.2vw; 
     line-height: 26px;
     background-color: black;
 }
@@ -102,7 +98,7 @@ footer{
 
 .footer-logo span{
     font-weight: 900;
-    font-size: 2.4rem;
+    font-size: 1.5vw;
 }
 /* настройка блоков */
 header {
@@ -124,7 +120,7 @@ main {
 nav a {
     font-weight: 500;
     font-style: normal;
-    font-size: 2.4rem;
+    font-size: 1.3vw;
     text-decoration: none;
     color: black;
     margin: 0 20px;
@@ -143,14 +139,14 @@ nav a:hover {
     background-position-y: center;
     background-position-x: left; 
     background-repeat: no-repeat;
-    min-height: 630px;
+    height: 630px;
     width: 100%; 
 }
 
 .hero-text {
     position: relative;
     width: calc(50% - 30px);
-    min-height: 360px;
+    height: 360px;
     margin: auto; 
     background-color: white;
     text-align: center;
@@ -160,12 +156,12 @@ nav a:hover {
 .hero-text h1{
     font-family: "Playfair Display", serif;
     font-weight: 500;
-    font-size: 8.6rem;
+    font-size: 4.5vw;
 }
 .hero-text p{
     font-weight: 500;
     font-style: normal;    
-    font-size: 2rem;
+    font-size: 1.05vw;
 }
 
 .container{
@@ -229,7 +225,7 @@ section {
 
 .biography-info h3 {
     font-family: "Playfair Display", serif;
-    font-size: 8.6rem;
+    font-size: 5vw;
     font-weight: 500;
     font-style: normal;
 }
@@ -241,7 +237,7 @@ section {
     position: static;
     margin-top: 145px;
     margin-left: 20px;
-    max-width: 100%
+    width: 100%;
 }
 .section-designers .title .section-name{
     margin-left: calc(100% / 12);
@@ -254,7 +250,6 @@ section {
     align-items: end; 
     margin-top: 30px;
     max-height: 30vw;
-    width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
 }
