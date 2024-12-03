@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* настройка шрифтов */
@@ -126,8 +127,13 @@ header {
 main {
     position: relative;
 }
-
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 nav a {
+    
     font-weight: 500;
     font-style: normal;
     font-size: 2.4rem;
@@ -363,9 +369,7 @@ section {
 /* START STRONG POINTS */
 .section-strong-points {
     display: block;
-    margin-left: 20px;
-    margin-top: 0;
-    
+    margin: 0 20px;
 }
 
 .section-strong-points .section-name {
@@ -373,25 +377,49 @@ section {
     margin-bottom: 40px;
 }
 
-.strong-points-content{
-    display: flex;
+.strong-points-content {
+    display: grid;
     gap: 20px;
     overflow-x: auto;
+    grid-template-columns: 335px 335px 451px 335px 335px;
 }
 
-.image-container{
-    flex: 1;
-    min-width: calc(var(--column-width) * 3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.image-container {
     overflow: hidden;
-}
+}   
 
-.image-container img {
+.image-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}  
+
+@supports not (display: grid) {
+    .strong-points-content{
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+    } 
+    
+    .image-container{
+        flex: 1;
+        min-width: calc(var(--column-width) * 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.text-container h3{
+    display: block;
+    text-align: center;
 }
 
 .text-container {
@@ -407,7 +435,14 @@ section {
     margin-bottom: 20px;
 }
 
+.text-container ul {
+    display: inline-block;
+    margin-left: 117.5px;
+    list-style: none;
+    /* align-items: center;  */
+} 
 
+/*
 .text-container ul {
     list-style: none;
     padding: 0;
@@ -415,6 +450,7 @@ section {
 .text-container ul li{
     margin: 5px 0;
 }
+    */
 /* END STRONG POINTS */
 
 footer {
