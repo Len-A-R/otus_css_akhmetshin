@@ -227,12 +227,38 @@ nav a:hover {
     .hero {
         position: relative;
         flex-direction: column;
+        height: 685px;
     }
 
     .hero-title {
         position: absolute;
         width: 100%;
-        min-height: 303px;
+        max-height: 303px;
+        transform: translate(0, 0);
+        top: 0;
+        left: 0;
+    }
+
+    .hero-title h1{
+        font-size: 4.375rem;
+    }
+
+    .hero-title p{
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero {
+        position: relative;
+        flex-direction: column;
+        height: 685px;
+    }
+
+    .hero-title {
+        position: absolute;
+        width: 100%;
+        max-height: 303px;
         transform: translate(0, 0);
         top: 0;
         left: 0;
@@ -473,7 +499,9 @@ section {
 
     .designers-list .first-item .designer-desc{
         margin-left: 0; 
-        
+    }
+    .designer-desc {
+        font-size: 1rem;
     }
     
 }
@@ -577,6 +605,7 @@ section {
         writing-mode: horizontal-tb;
         transform: rotate(0deg);
         margin-bottom: 40px;
+        font-size: 1.125rem;
     }
 
     .section-testimonials-quote {
@@ -587,7 +616,7 @@ section {
         min-width: 50%;
         font-size: 1.875rem;
         font-weight: 400;
-        padding: 20px
+        padding: 0 20px 20px 20px;
     }
 
     .section-testimonials-quote img {
@@ -595,15 +624,19 @@ section {
         height: 330px;
         object-fit: cover;
     }
-
 }
 
+@media screen and (max-width: 450px) {
+    .section-testimonials-quote {
+        flex-direction: column;
+    }
+}
 /*#endregion*/
 
 /*#region STRONG POINTS*/
 .section-strong-points {
     display: block;
-    margin: 0 20px;
+    margin: 0 0 100px 20px;
 }
 
 .section-strong-points .section-name {
