@@ -66,14 +66,14 @@ blockquote {
 
 .testimonials-links-list{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 18.75px;
+    font-size: 1.2vw;
+    /* line-height: 18.75px; */
 }
 
 .testimonials-links-item{
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.75px;
+    font-size: 1.2vw;
+    /* line-height: 18.75px; */
     color: black;
     text-decoration: none;
 }
@@ -84,7 +84,7 @@ blockquote {
 
 footer{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.2vw; 
     line-height: 26px;
     background-color: black;
 }
@@ -96,21 +96,10 @@ footer{
     color: white;
 }
 
-.footer-logo{
-    font-weight: 400;
-    font-size: 1.2vw;
-}
 .footer-logo span{
     font-weight: 900;
     font-size: 1.5vw;
 }
-.contacts {
-    font-size: 1.2vw;
-}
-.pricing {
-    font-size: 1.2vw;
-}
-
 /* настройка блоков */
 header {
     height: 135px;
@@ -150,14 +139,12 @@ nav a:hover {
     background-position-y: center;
     background-position-x: left; 
     background-repeat: no-repeat;
-    /* padding: 110px 20px; */
     height: 630px;
     width: 100%; 
 }
 
 .hero-text {
     position: relative;
-    /* grid-column: 4 / 10; */
     width: calc(50% - 30px);
     height: 360px;
     margin: auto; 
@@ -197,9 +184,7 @@ section {
 
 .biography-image-container {
     grid-column: 2 / 7;
-    /* width: 50%; */
     height: 100%;
-    /* padding-left: calc(100% / 6); */
 }
 
 .content-biography-img {
