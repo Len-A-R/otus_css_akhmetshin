@@ -5,15 +5,22 @@
     /* outline: 1px solid; */
 }
 
+:root {
+    --min-content-width: 350px;
+    --max-content-width: 1440px;
+    --column-width: calc(var(--max-content-width) / 12);
+}
+
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* íàñòðîéêà øðèôòîâ */
 body {
     font-family: "Roboto", serif;
-    min-width: 350px;
-    max-width: 1440px;
+    min-width: var(--min-content-width);
+    max-width: var(--max-content-width);
     margin: auto;
 }
 
@@ -111,7 +118,7 @@ header {
     justify-content: space-between;    
     align-items: center;
     /* padding: 20px 20px; */
-    max-width: 1440px;
+    max-width: var(--max-content-width);
     margin: 0 auto;    
     padding-left: 20px;
     padding-right: 20px;
@@ -120,8 +127,13 @@ header {
 main {
     position: relative;
 }
-
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 nav a {
+    
     font-weight: 500;
     font-style: normal;
     font-size: 2.4rem;
@@ -260,11 +272,11 @@ section {
 }
 
 .designers-list .first-item {
-    min-width: calc(100% / 12 * 5 - 30px);
+    min-width: calc((100% / 12 * 5) - 20px);
 }
 
 .designers-list .other-item {
-    min-width: calc(100% / 12 * 3 - 25px) ;
+    min-width: calc((100% / 12 * 3) - 20px) ;
 }
 
 .designer-item {
@@ -283,8 +295,8 @@ section {
 }
 
 .designers-list .first-item .designer-desc{
-    margin-left: calc(100% / 5 * 2); 
-    min-width: calc(100% / 5 * 3);
+    margin-left: calc(var(--column-width) * 2); 
+    min-width: calc(var(--column-width) * 3);
 }
 /* END DESIGNERS */
 
@@ -294,7 +306,7 @@ section {
     grid-template-columns: repeat(12, 1fr);
     /* grid-template-rows: repeat(3, 1fr); */
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 200px;
 }
 
 .testimonials-frame {
@@ -348,53 +360,97 @@ section {
 }
 
 .section-testimonials-quote .special-font {
-    font-size: 2vw;
+    font-size: 3.2rem;
     text-align: center;
 }
 /* END TESTIMONIALS */
+
+
 /* START STRONG POINTS */
 .section-strong-points {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 28px 1fr;
-    gap: 20px;
-    margin-left: 20px;
+    display: block;
+    margin: 0 20px;
 }
 
 .section-strong-points .section-name {
-    grid-row: 1;
-    grid-column: 3 / 5;
+    margin-left: calc(var(--column-width) * 2);
+    margin-bottom: 40px;
 }
 
-.section-strong-points img{
-    grid-row: 2;
-    grid-column: span 3;
+.strong-points-content {
+    display: grid;
+    gap: 20px;
+    overflow-x: auto;
+    grid-template-columns: 335px 335px 451px 335px 335px;
+}
+
+.image-container {
+    overflow: hidden;
+}   
+
+.image-container img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+
+@supports not (display: grid) {
+    .strong-points-content{
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+    } 
+    
+    .image-container{
+        flex: 1;
+        min-width: calc(var(--column-width) * 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
-.section-strong-points .text{
-    grid-row: 2;
-    grid-column: span 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.section-strong-points .text h3 {
+.text-container h3{
+    display: block;
     text-align: center;
 }
 
-.section-strong-points .text ul {
-    list-style: none;
-    margin-left: calc(100% / 4);
+.text-container {
+    min-width: calc(var(--column-width) * 4);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-strong-points img{
-    grid-row: 2;
-    grid-column: span 3;
-    object-fit: cover;
-    height: 100%;
+.text-container h3 {
+    margin-bottom: 20px;
 }
+
+.text-container ul {
+    display: inline-block;
+    margin-left: 117.5px;
+    list-style: none;
+    /* align-items: center;  */
+} 
+
+/*
+.text-container ul {
+    list-style: none;
+    padding: 0;
+}
+.text-container ul li{
+    margin: 5px 0;
+}
+    */
 /* END STRONG POINTS */
 
 footer {
