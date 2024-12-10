@@ -1,0 +1,107 @@
+.strong-points {
+    display: block;
+    margin: 0 0 100px 20px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-style: normal;
+        margin-left: calc(var($column-width) * 2);
+        margin-bottom: 40px;
+
+        @media screen and (max-width: $tablet-max-width) {
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.125rem;
+            margin-left: 0;
+            margin-bottom: 40px;            
+        }
+    }
+
+    &__slider {
+        display: grid;
+        gap: 20px;
+        overflow-x: auto;
+        grid-template-columns: 335px 335px 451px 335px 335px;
+        @supports not (display: grid) {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+
+        @media screen and (max-width: $tablet-max-width) {
+            grid-template-columns: 201px 310px 300px 300px 300px;        
+            height: 450px;
+        }
+    }
+
+    &__item {
+        overflow: hidden;
+        @supports not (display: grid) {
+            flex: 1;
+            min-width: calc(var(--column-width) * 3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;            
+        }
+    }   
+    
+    &__item-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @supports not (display: grid) {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }  
+    
+    &__list {
+        font-family: "Bitter", serif;
+        font-weight: 400;    
+        font-size: 2.125rem;
+        display: inline-block;
+        margin-left: 117.5px;
+        list-style: none;        
+        @media screen and (max-width: $tablet-max-width) {
+            font-family: "Bitter", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin-left: 20px;
+            line-height: 145%;
+        }
+    }
+
+    &__item-info {
+        width: calc(var($column-width) * 4);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $tablet-max-width) {
+            order: -1;
+            display: flex;
+            flex-direction: column;
+            width: 201px;
+            justify-content: flex-start;
+            align-items: start;            
+        }
+    }
+
+    &__item-info-title {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 5.375rem;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;        
+        @media screen and (max-width: $tablet-max-width) {
+            font-size: 2.875rem;
+        }
+    }
+}

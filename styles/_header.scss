@@ -1,0 +1,58 @@
+.header {
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $site-max-width;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (max-width: $mobile-max-width) {
+        height: 0;
+    }
+    &__logo {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 5.375rem;        
+        @media screen and (max-width: $hide-logo-max-width){
+            display: none;
+        }
+    
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width: $hide-logo-max-width){
+            display: flex;
+            width: 100%;
+            padding-left: 0;
+            justify-content: space-around;
+        }
+    }
+    
+    &__menu-item {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        margin: 0 20px;
+        @media screen and (max-width: $hide-logo-max-width){
+            font-size: 2.5rem;
+        }
+    }
+    
+    &__menu-item span {
+        display: inline;
+        @media screen and (max-width: $hide-logo-max-width){
+            display: none;
+        }
+    }
+
+    &__menu-item:hover {
+        text-decoration: underline;
+    }
+}
