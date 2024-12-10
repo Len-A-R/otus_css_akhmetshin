@@ -1,4 +1,4 @@
-/*#region Базовые настройки*/
+/*#region пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ html {
 }
 /*#endregion*/
 
-/*#region настройка шрифтов*/
+/*#region пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 body {
     min-width: var(--min-content-width);
     max-width: var(--max-content-width);
@@ -115,7 +115,7 @@ footer{
 }
 /*#endregion*/
 
-/* настройка блоков */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
 /*#region HEADER*/
 header {
     height: 135px;
@@ -291,8 +291,8 @@ section {
 }
 
 .line {
-    width: 20px; /* ширина линии */
-    height: 6px; /* толщина линии */
+    width: 20px; /* ГёГЁГ°ГЁГ­Г  Г«ГЁГ­ГЁГЁ */
+    height: 6px; /* ГІГ®Г«Г№ГЁГ­Г  Г«ГЁГ­ГЁГЁ */
     background-color: black;
     margin: 15px 0;
 }
