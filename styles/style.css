@@ -34,7 +34,10 @@ main {
 }
 @media screen and (max-width: 450px) {
   .header {
-    height: 0;
+    height: 50px;
+    z-index: -1;
+    bottom: 0;
+    position: sticky;
   }
 }
 .header__logo {
@@ -659,33 +662,6 @@ section {
   .strong-points__item-info-title {
     font-size: 2.875rem;
   }
-}
-
-.navbar {
-  display: none;
-  position: sticky;
-  bottom: 0;
-  flex-direction: row;
-  width: 100%;
-  padding-left: 0;
-  justify-content: space-around;
-  background-color: white;
-}
-@media screen and (max-width: 450px) {
-  .navbar {
-    display: flex;
-  }
-}
-.navbar__item {
-  font-weight: 500;
-  font-style: normal;
-  font-size: 2.5rem;
-  text-decoration: none;
-  color: black;
-  margin: 0 20px;
-}
-.navbar__item:hover {
-  text-decoration: underline;
 }
 
 .footer {

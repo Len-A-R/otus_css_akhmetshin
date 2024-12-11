@@ -7,9 +7,15 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+
+
     @media screen and (max-width: $mobile-max-width) {
-        height: 0;
+        height: 50px;
+        z-index: -1;
+        bottom: 0;
+        position: sticky;
     }
+    
     &__logo {
         font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
