@@ -14,19 +14,24 @@ html {
     font-family: "Roboto", serif;
 }
 
-body {
+.page {
     min-width: $site-min-width;
     max-width: $site-max-width;
     margin: auto;
+    scrollbar-gutter: stable;
+
+    &--scroll-locked {
+        overflow: hidden;
+        padding-right: 17px;
+    }
 }
 
 main {
     position: relative;
 }
 
-.page--scroll-locked {
-    overflow: hidden;
-}
+
+
 
 @import "header";
 

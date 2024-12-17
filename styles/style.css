@@ -12,18 +12,19 @@ html {
   font-family: "Roboto", serif;
 }
 
-body {
+.page {
   min-width: 350px;
   max-width: 1440px;
   margin: auto;
+  scrollbar-gutter: stable;
+}
+.page--scroll-locked {
+  overflow: hidden;
+  padding-right: 17px;
 }
 
 main {
   position: relative;
-}
-
-.page--scroll-locked {
-  overflow: hidden;
 }
 
 .header {
