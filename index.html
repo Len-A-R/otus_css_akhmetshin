@@ -160,16 +160,32 @@
     <div class="modal modal--closed" id="modal-1">
         <!--   modal--closed   -->
         <div class="modal__box">
-            <header class="modal__heading">
-                <h2 class="modal__title">Get in touch</h2>
-            </header>
-            <p>
-                Do you have any questions? Have something to say? Don't be shy, write to us:
-            </p>
-            <footer>
-                <button class="modal__close-btn" id="modal-1-close">Cancel</button>
-                <button class="modal__send-btn" id="modal-1-send">Send</button>                
-            </footer>
+            <div class="modal__content">
+                <header class="modal__heading">
+                    <h2 class="modal__title">Get in touch</h2>
+                </header>
+                <div class="modal__body">
+                    <p class="modal__element">
+                        Do you have any questions? Have something to say? Don't be shy, write to us:
+                    </p>
+                    <div class="modal__element">
+                        <label for="modal__name" class="modal__label" name="name">Name</label>
+                        <input type="text" id="modal__name" class="modal__text" placeholder="3+ Characters">
+                    </div>
+                    <div class="modal__element">
+                        <label for="modal__email" class="modal__label" name="email">E-mail</label>
+                        <input type="text" id="modal__email" class="modal__text" placeholder="name@email.com">
+                    </div>            
+                    <div class="modal__element">
+                        <label for="modal__comment" class="modal__label" name="comment">Comment</label>
+                        <textarea id="modal__comment" class="modal__textarea" placeholder="Some text..."></textarea>
+                    </div>  
+                </div>
+            </div>
+            <footer class="modal__footer">
+                <button class="modal__btn modal__btn-cancel" id="modal-1-close">Cancel</button>
+                <button class="modal__btn modal__btn-send" id="modal-1-send">Send</button>                
+            </footer>            
         </div>
     </div>    
 </body>
