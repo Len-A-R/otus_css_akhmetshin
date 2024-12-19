@@ -19,25 +19,21 @@ html {
     max-width: $site-max-width;
     margin: auto;
     scrollbar-gutter: stable;
+}
 
-    &--scroll-locked {
-        overflow: hidden;
-        padding-right: 17px;
-    }
+body.modal-open {
+    overflow: hidden;
 }
 
 main {
     position: relative;
 }
 
-
-
-
 @import "header";
 
 @import "hero";
 
-.content{
+.content {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -57,4 +53,4 @@ section {
 
 @import "footer";
 
-@import "modal";
+@import "contact-form";

@@ -42,8 +42,8 @@
         text-orientation: mixed;
         @media  screen and (max-width: $tablet-max-width) {
             position: absolute;
-            left: calc(100% / 4 * 3);
-            top: 0px;
+            right: 0;
+            top: 0;
             writing-mode: horizontal-tb;
             text-orientation: sideways;
         }

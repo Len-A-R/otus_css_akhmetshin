@@ -10,10 +10,18 @@
     background-color: white;
 
     @media screen and (max-width: $mobile-max-width) {
-        height: 50px;
+        position: fixed;
+        height: 82px;
+        left: 0;
+        bottom: 0;
+        right: 0;
         z-index: 2;
-        top: calc(100vh - 50px);
-        position: sticky;
+        // top: calc(100vh - 82px);
+        // position: sticky;
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+        font-family: "Bitter", serif;
+        font-size: 40px;
     }
     
     &__logo {
@@ -77,4 +85,10 @@
         background-position: 50%;
         
     }
+}
+
+body {
+    @media screen and (max-width: $mobile-max-width) {
+        padding-bottom: 82px;
+    }    
 }
