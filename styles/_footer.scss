@@ -1,0 +1,74 @@
+.footer{
+    font-weight: 400;
+    font-size: 1rem; 
+    line-height: 26px;
+    background-color: black;
+    color: white;
+    height: 168px;
+    align-content: center;    
+    width: 100%;
+    @media screen and (max-width: $tablet-max-width) {
+        height: auto;
+    }
+
+    &__phone,
+    &__email
+    {
+        color: white;
+    }
+    
+    &__logo {
+        text-align: center;
+        align-content: center;
+        font-size: 1.125rem;
+        @media screen and (max-width: $tablet-max-width) {
+            display: inline;
+            grid-row: 1;
+            text-align: right;
+            font-size: 1.125rem;
+        }
+    }
+    &__logo span{
+        font-weight: 900;
+        font-size: 1.5rem;
+        @media screen and (max-width: $tablet-max-width) {
+            font-size: 1.5rem;
+        }    
+    }
+    
+    &__contacts-wrp {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+        @media screen and (max-width: $tablet-max-width) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 0;
+            padding: 20px; 
+        }        
+    }
+    
+    &__contacts {
+        text-align: left;
+        align-content: center;
+        @media screen and (max-width: $tablet-max-width) {
+            grid-row: 2;
+            font-size: 1rem;
+        }
+    }
+    
+    &__pricing {
+        text-align: end;
+        align-content: center;
+        @media screen and (max-width: $tablet-max-width) {
+            grid-row: 3;
+            text-align: left;
+            font-size: 1rem;
+        }
+    }    
+}
+
+
+

@@ -1,0 +1,56 @@
+@import "vars";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font-size;
+    line-height: normal;
+    scroll-behavior: smooth;
+    font-family: "Roboto", serif;
+}
+
+.page {
+    min-width: $site-min-width;
+    max-width: $site-max-width;
+    margin: auto;
+    scrollbar-gutter: stable;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+}
+
+@import "header";
+
+@import "hero";
+
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-top: 0;
+    margin-bottom: 150px;
+}
+
+@import "biography";
+
+@import "designers";
+
+@import "testimonials";
+
+@import "strong-points";
+
+@import "footer";
+
+@import "contact-form";
